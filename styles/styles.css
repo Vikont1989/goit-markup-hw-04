@@ -477,6 +477,7 @@ img {
 .footer {
   background-color: var(--futer-bg-color);
   padding: 60px 0;
+  display: flex;
 }
 .adres {
   font-weight: 400;
@@ -523,6 +524,16 @@ img {
   margin-bottom: 20px;
   display: block;
 }
+
+.social-futer {
+color: var(--background-color);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+padding-bottom: 20px;
 /* оформлення сторінки портфоліо */
 
 /* оформлення кнопок навігації */
