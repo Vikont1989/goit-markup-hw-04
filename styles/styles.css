@@ -21,6 +21,7 @@
   --background-color: #fff;
   --background-color-team: #f5f4fa;
   --contener-color: #eeeee;
+  --icon-color: #AFB1B8;
 }
 
 body {
@@ -114,17 +115,27 @@ img {
   color: var(--accent-color);
 }
 .contacts {
-  display: block;
+  display: flex;
+  align-items:center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  width: 100%;
+  height: 100%;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
   padding: 32px 0;
 }
 
-.lis:first-child {
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
 }
 
 .contacts:hover {
@@ -379,37 +390,87 @@ img {
 .facebook {
   width: 44px;
   height: 44px;
+  display: flex;
+  color:var(--icon-color);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  justify-content:center;
+  align-items:center;
 }
 
 .teame-social-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .facebook:hover,
 .facebook:focus {
+  color: var(--background-color);
   background-color: var(--accent-color);
 }
 
 .facebook:hover .teame-social-icon,
 .facebook:focus .teame-social-icon {
-  fill: var(--accent-color);
+  
 }
+
+.media-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
 
 /* Список партнерських фірм */
 
-.patners {
-  display: flex;
+.heading-firm {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 
-.logo-patners {
-  display: inline-block;
+
+.patners {
   display: flex;
-  
-  height: 92px;
-  outline: 1px solid red;
+   padding-bottom: 94px;
+   gap: 30px;
 }
+
+.firm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  fill:var(--icon-color);
+  border:1px solid var(--icon-color);
+}
+
+.firm-social-icon {
+  margin-left: 32px;
+  margin-top: 16px;
+  color:var(--icon-color);
+}
+
+.firm-social-icon:hover,
+.firm-social-icon:focus {
+  fill:var(--accent-color); 
+}
+
+ .nav-firm:hover,
+ .nav-firm:focus {
+ 
+}
+
+.nav-firm {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  gap: 20px;
+}
+
 
 /* підвал сайту */
 
