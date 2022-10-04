@@ -22,6 +22,7 @@
   --background-color-team: #f5f4fa;
   --contener-color: #eeeee;
   --icon-color: #AFB1B8;
+  --items-shadow:#EEEEEE;
 }
 
 body {
@@ -408,10 +409,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.facebook:hover .teame-social-icon,
-.facebook:focus .teame-social-icon {
-  
-}
 
 .media-nav {
   display: flex;
@@ -439,27 +436,29 @@ img {
    gap: 30px;
 }
 
-.firm {
+.firm-logo {
   width: 100%;
   height: 100%;
   display: flex;
   fill:var(--icon-color);
   border:1px solid var(--icon-color);
+  justify-content: center;
+  align-items:center;
+  border-radius: 4px;
 }
 
 .firm-social-icon {
-  margin-left: 32px;
-  margin-top: 16px;
   color:var(--icon-color);
 }
 
-.firm-social-icon:hover,
-.firm-social-icon:focus {
+.firm-logo:hover,
+.firm-logo:focus {
   fill:var(--accent-color); 
 }
 
  .nav-firm:hover,
  .nav-firm:focus {
+  border-color:var(--accent-color);
  
 }
 
@@ -478,6 +477,11 @@ img {
   background-color: var(--futer-bg-color);
   padding: 60px 0;
   display: flex;
+}
+
+.footer > .container {
+  display: flex;
+  gap: 70px;
 }
 .adres {
   font-weight: 400;
@@ -525,7 +529,14 @@ img {
   display: block;
 }
 
-.social-futer {
+.container-icon {
+ 
+  margin-top: 12px;
+  
+ 
+}
+
+.social-footer {
 color: var(--background-color);
 font-family: 'Roboto';
 font-style: normal;
@@ -534,6 +545,33 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 padding-bottom: 20px;
+}
+
+.icon-footer {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  color:var(--background-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content:center;
+  align-items:center;
+}
+
+.teame-social-icon {
+  fill: currentColor;
+}
+
+.icon-footer:hover,
+.icon-footer:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+
+
+
+
 /* оформлення сторінки портфоліо */
 
 /* оформлення кнопок навігації */
@@ -556,7 +594,28 @@ padding-bottom: 20px;
   color: var(--background-color);
 }
 
+.button-shadow {
+
+}
+
+.button-shadow:hover,
+.button-shadow:focus{
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 /* оформлення галереї прикладів робіт */
+
+.items-shadow {
+ display: block;
+ border: 1px solid var(--items-shadow);
+}
+
+.items-shadow:hover,
+.items-shadow:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .firm {
   font-weight: 700;
