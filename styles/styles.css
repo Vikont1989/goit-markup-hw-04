@@ -82,7 +82,7 @@ img {
   margin-bottom: 0%;
   align-items: center;
   display: flex;
-  justify-content: ;
+  justify-content: center ;
 }
 
 .page-head > .container {
@@ -119,10 +119,8 @@ img {
   display: flex;
   align-items:center;
   font-weight: 500;
-  font-size: 14px;
+  
   line-height: 1.14;
-  width: 100%;
-  height: 100%;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
@@ -228,6 +226,7 @@ img {
   margin-top: 30px;
   padding: 10px 32px;
   border: none;
+  cursor: pointer;
 }
 /* ключові можливості та стратегія фірми  */
 
@@ -414,6 +413,7 @@ img {
   display: flex;
   gap: 10px;
   justify-content: center;
+  margin-top: 16px;
 }
 
 
@@ -426,13 +426,14 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
+.partners {
+  padding: 94px 0;
+}
 
-.patners {
+.partners-firm {
   display: flex;
-   padding-bottom: 94px;
    gap: 30px;
 }
 
@@ -440,33 +441,29 @@ img {
   width: 100%;
   height: 100%;
   display: flex;
-  fill:var(--icon-color);
+  color:var(--icon-color);
+  border: 1px solid var(--icon-color);
   justify-content: center;
   align-items:center;
   border-radius: 4px;
 }
 
 .firm-social-icon {
-  color:var(--icon-color);
+  fill:currentColor;
 }
 
 .firm-logo:hover,
 .firm-logo:focus {
-  fill:var(--accent-color); 
+  color:var(--accent-color); 
+  border-color: var(--accent-color);
 }
 
- .nav-firm:hover,
- .nav-firm:focus {
-  border-color:var(--accent-color);
- 
-}
+
 
 .nav-firm {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  gap: 20px;
+  
 }
 
 
@@ -480,6 +477,7 @@ img {
 
 .footer > .container {
   display: flex;
+  align-items:baseline;
   gap: 70px;
 }
 .adres {
@@ -543,7 +541,7 @@ font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .icon-footer {
@@ -593,12 +591,8 @@ padding-bottom: 20px;
   color: var(--background-color);
 }
 
-.button-shadow {
-
-}
-
-.button-shadow:hover,
-.button-shadow:focus{
+.btn:hover,
+.btn:focus{
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -606,6 +600,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .items-shadow {
  display: block;
+ text-decoration: none;
+ color:var(--primart-text-color);
 }
 
 .items-shadow:hover,
